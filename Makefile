@@ -7,7 +7,7 @@ test:
 	@./node_modules/.bin/mocha \
 		--require test/common \
 		--reporter $(REPORTER) \
-		--slow 500ms \
+		--slow 2000ms \
 		--bail \
 		--globals ___eio,document \
 		$(TESTS)
