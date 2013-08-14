@@ -17,7 +17,7 @@
   , "dependencies": {
         "debug": "0.6.0"
       , "ws": "git://github.com/kkoopa/ws.git"
-      , "engine.io-parser": "0.3.0"
+      , "engine.io-parser": "git://github.com/kkoopa/engine.io-protocol.git"
       , "base64id": "0.1.0"
     }
   , "devDependencies": {
