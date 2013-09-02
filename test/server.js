@@ -845,8 +845,8 @@ describe('server', function () {
 
     it('should interleave with pongs if many messages buffered ' +
        'after connection open', function (done) {
-      this.slow(4000);
-      this.timeout(8000);
+      this.slow(25000);
+      this.timeout(30000);
 
       var opts = {
         transports: ['websocket'],
@@ -869,8 +869,7 @@ describe('server', function () {
           }
           var receivedCount = 0;
           socket.on('message', function (msg) {
-            receivedCount += 1;
-            if (receivedCount === messageCount) {
+            if (++receivedCount === messageCount) {
               done();
             }
           });
